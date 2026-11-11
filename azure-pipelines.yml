@@ -1,0 +1,11 @@
+trigger:
+  - main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - script: cargo build --all-targets
+    displayName: Build
+  - script: cargo test
+    displayName: Test
