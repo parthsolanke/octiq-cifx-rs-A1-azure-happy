@@ -1,4 +1,4 @@
-use fixture::{add, double};
+use fixture::{add, addition, double};
 
 #[test]
 fn add_works_from_outside() {
@@ -8,4 +8,9 @@ fn add_works_from_outside() {
 #[test]
 fn double_works_from_outside() {
     assert_eq!(double(5), 10);
+}
+
+#[test]
+fn addition_works_from_outside() {
+    assert_eq!(addition(40, 2), 42);
 }

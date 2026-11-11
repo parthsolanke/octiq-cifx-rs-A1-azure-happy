@@ -8,6 +8,10 @@ pub fn double(a: i32) -> i32 {
     a * 2
 }
 
+pub fn addition(a: i32, b: i32) -> i32 {
+    add(a, b)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -20,5 +24,10 @@ mod tests {
     #[test]
     fn doubles() {
         assert_eq!(double(21), 42);
+    }
+
+    #[test]
+    fn addition_returns_sum_of_two_numbers() {
+        assert_eq!(addition(20, 22), 42);
     }
 }

@@ -22,12 +22,14 @@ The `fixture` crate is a small, dependency-free library with two public
 functions:
 
 - `add(a: i32, b: i32) -> i32` - returns the sum of two numbers.
+- `addition(a: i32, b: i32) -> i32` - returns the sum of two numbers.
 - `double(a: i32) -> i32` - returns the number multiplied by two.
 
 ```rust
-use fixture::{add, double};
+use fixture::{add, addition, double};
 
 assert_eq!(add(2, 2), 4);
+assert_eq!(addition(2, 2), 4);
 assert_eq!(double(21), 42);
 ```
 
