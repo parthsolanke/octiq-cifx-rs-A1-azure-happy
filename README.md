@@ -2,7 +2,7 @@
 
 AC 2. Root azure-pipelines.yml with a `script:` step running cargo test.
 
-## How to test
+**How to test**
 
 1. Octiq QA -> Import -> GitHub -> this repo
 2. In chat: `add a comment at the top of the README`
